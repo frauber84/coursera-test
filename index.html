@@ -1,1 +1,129 @@
-teste 
+<!doctype html>
+<html>
+<head>
+	<meta chartset="utf-8">
+	<title>Teste</title></head>
+
+<body>
+	<header> Teste de header
+	<nav>
+	Links para página
+	<ul>
+		<li><a href="#links">Links</a></li>
+		<li><a href="#cer">Character Entity References</a></li>
+	</ul>
+	</nav>
+	</header>
+
+	<p><h1>Conteúdo</h1> <span>span</span></p>
+	
+	<h2> Parágrafos, divs e spans</h2>
+
+	<p>Parágrafo2</p>
+
+	<div><h2>Div1</h2></div>
+	<div><h3>Div2</h3></div>
+	<span>Span depois do div 2</span>
+
+	<div>Div3
+	<span>Span dentro de Div3</span>
+	</div>
+
+<p>BLOCK-LEVEL elements VS iNLINE elements: </p>
+Com ou sem quebra de linha, separações genéricas
+
+
+<p>HTML5:</p>
+
+<li>FLOW content (block-level)
+<li>PHRASING CONTENT (inline-level)
+	<br><br>
+<li>DIV --> division --> BLOCK-LEVEL genérico
+<li>SPAN --> INLINE-LEVEL genérico
+
+
+<p>block-level não pode ser child de inline-level</p>
+
+<h2>Atributos</h2>
+<div>id = deve ser ÚNICO para cada elemento.<br>title, target, etc...</div>
+
+
+<h2> Semantic Tags</h2>
+<p>Headings</p>
+<li>H1, H2, H3, H4 = somente para ESTRUTURA, não para o ESTILO (isso será por CSS)
+
+<li>HEADER, NAV
+<li>SECTION, ARTICLE   , ASIDE (related)  [BLOCK-LEVEL]. Importante para SEARCH ENGINE OPTIMIZATION. Porém, igual a um div ou span
+
+<h2> Listas</h2>
+<div>
+	Agrupamento de conteúdo<br>
+	Tag UL: Somente lista permitida  (UN-ORDERED)
+<ul> 
+<li>Elemento I</li>
+<li>Elemento 2</li>
+<li>Elemento 3</li>
+	<ul>
+	<li>Elemento3.Filho1</li>
+	<li>Elemento3.Filho2</li>
+	<li>Elemento3.Filho2</li>
+	</ul>
+</ul>
+
+<div>
+	Tag oL: Somente lista permitida  (ORDERED)
+<ol> 
+<li>Elemento I</li>
+<li>Elemento 2</li>
+<li>Elemento 3</li>
+	<ol>
+	<li>Elemento3.Filho1</li>
+	<li>Elemento3.Filho2</li>
+	<li>Elemento3.Filho2</li>
+	</ol>
+</ol>
+
+
+</div>
+
+
+<section>
+	Seção 1
+	<article>
+	Artigo 2
+	</article>
+</section>
+
+
+<h2><a name="cer">Character Entity Refences</a></h2>
+<div>
+	Utilizados para representar caracteres que seriam interpretados como tags e outros lementos.... como  <, > e & 
+	<br>
+	&lt;   &gt;  &amp;
+
+	Non-breaking&nbsp;space: evitar quebra do texto. NÃO USAR para colocar espaço em branco (em vez disso, usar span com alinhamento).
+	Sempre usar SEM espaços entre as palavras
+
+	&quot; Aspas de citação para evitar problemas de encodeamento&quot;
+</div>
+
+<!-- comentário-->
+
+<h2 id="links">Links</h2>
+<div>
+<a href="pagina.html" target="_blank" title="Título para acessibilidade"><div>Link ou imagem?</div></a>
+</div>
+
+<h2 id="imagens">Imagens</h2>
+<div>
+	<p>Img = Elemento inline</p>
+	<p>Especificar width e height para que o browser RESERVE espaço antes do carregamento</p>
+<img src="imagem.png">
+</div>
+
+<hr>
+<footer>
+Footer - contato: fraubergoncalves@gmail.com
+</footer>
+</body>	
+</html>
