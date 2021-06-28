@@ -2,7 +2,33 @@
 <html>
 <head>
 	<meta chartset="utf-8">
-	<title>Teste</title></head>
+	<title>Teste</title>
+	<style>
+	h2 { 
+		color: darkgreen;
+		font-size:  40px;
+		width:  600px;
+	}
+
+	.classe, #css_h2 {
+	 	color:white;
+	 	font-size: 20px; 
+	 	background-color: red;
+	 	opacity:  .6;
+	}
+
+	/* estilo para um menu */
+	header li {
+		list-style: none;	
+	}
+	a:link, a:visited {
+		text-decoration: none;  /* sem underline  */
+
+	}
+
+	</style>
+
+</head>
 
 <body>
 	<header> Teste de header
@@ -121,9 +147,36 @@ Com ou sem quebra de linha, separações genéricas
 <img src="imagem.png">
 </div>
 
+<h2 id="css_h2">CSS</h2>
+<p class="classe">Selecionado por elemento, classe ou  id<br></p>
+<p>elemento { atributo: valor; } --> regra para alguma TAG </p>
+<p>.classe { atributo: valor; } </p>
+<p>#id { atributo: valor; } </p>
+
+<p>Agrupando: #id, .classe, elemento { atributo> valor; } </p>
+
+<p> p.big { atributo: valor; }  --> elemento com CLASSE específica</p>
+
+<p> article > p { atributo: valor; }  --> elemento p que é CHILD <b>direto</b> de um article, ou seja, de um elemento block-level</p>
+
+<p> pai descendente { atributo: valor; }  --> elemento é descendente de outro (elemento ou classe) pai em qualquer nível </p>
+
+<h2>Pseudo-Class selector</h2>
+
+<div>seletor:pseudo-class</div>
+<ul>
+	<li>:link</li>
+	<li>:visited</li>
+	<li>:hover</li>
+	<li>:active</li>
+	<li>:nth-child</li>
+</ul>
+
+
 <hr>
 <footer>
 Footer - contato: fraubergoncalves@gmail.com
 </footer>
 </body>	
 </html>
+ 
